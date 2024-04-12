@@ -8,3 +8,5 @@ https://github.com/zyy314680012/Lucene.Net.Analysis.Jieba
 
 nuget 引用之后 将 packages\lucene.net.analysis.jieba\xx.x.x.x.xx\content\Resources 复制到项目目录下
 
+
+var analyzer = new Lucene.Net.Analysis.Jieba.JiebaAnalyzer(Lucene.Net.Analysis.Jieba.Segmenter.TokenizerMode.Search);
