@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\idf.txt" />
+      <Content Include="Resources\idf.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\stopwords.txt" />
+      <Content Include="Resources\stopwords.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\char_state_tab.json" />
+      <Content Include="Resources\char_state_tab.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\dict.txt" />
+      <Content Include="Resources\dict.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\pos_prob_emit.json" />
+      <Content Include="Resources\pos_prob_emit.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\pos_prob_start.json" />
+      <Content Include="Resources\pos_prob_start.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\pos_prob_trans.json" />
+      <Content Include="Resources\pos_prob_trans.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\prob_emit.json" />
+      <Content Include="Resources\prob_emit.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\prob_trans.json" />
+      <Content Include="Resources\prob_trans.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Lucene.Net" Version="4.8.0-beta00016" />
+      <PackageReference Include="Lucene.Net.Analysis.Common" Version="4.8.0-beta00016" />
+    </ItemGroup>
+
+</Project>
