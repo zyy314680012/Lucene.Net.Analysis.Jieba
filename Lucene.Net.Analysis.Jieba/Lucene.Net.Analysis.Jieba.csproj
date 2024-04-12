@@ -4,6 +4,13 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <PackageId>$(AssemblyName)</PackageId>
+        <Description>from https://github.com/zyy314680012/Lucene.Net.Analysis.Jieba</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Version>4.8.0-beta00016</Version>
+        <PackageProjectUrl>https://github.com/zyy314680012/Lucene.Net.Analysis.Jieba</PackageProjectUrl>
+        <RepositoryUrl></RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
@@ -47,6 +54,13 @@
       <Content Include="Resources\prob_trans.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
     </ItemGroup>
 
     <ItemGroup>
